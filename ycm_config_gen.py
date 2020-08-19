@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Generate a configuration file for YouCompleteMe.
 
 When running in a virtual environment, YouCompleteMe required a configuration
@@ -11,6 +11,8 @@ Example:
     $ python ycm_config_gen.py
 
 Run the above command in the root of the virtual env project.
+NOTE! Make sure that you run this script from the activated virtualenvironment,
+otherwise it'll se the interpreter_path to your system Python.
 
 """
 
@@ -55,7 +57,7 @@ def write_config_file():
         f"    return {{\n"
         f"        'interpreter_path': '{int_path}'\n"
         f"        }}"
-        )
+    )
     try:
         with open('.ycm_extra_conf.py', 'w') as out_file:
             out_file.write(to_file)
