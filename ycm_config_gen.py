@@ -47,6 +47,17 @@ def get_venv_path():
     return ''
 
 
+def sala(nimi: str) -> str:
+    """Function
+
+    Args:
+    function (TODO): TODO
+
+    Returns: TODO
+
+    """
+    return nimi * 2
+
 def write_config_file():
     """Write the config file for the directory."""
     int_path = get_venv_path()
@@ -75,8 +86,4 @@ def main():
         print("No virtual environment active! Have you tried activating it?")
         return
     write_config_file()
-
-
-if __name__ == "__main__":
-    main()
 
