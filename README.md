@@ -7,3 +7,8 @@ Only works if the virtual environment is active.
 
 Will be later used as a part of a Python project folder creating script.
 
+## ToDo
+
+1. Expand to work with coc.nvim language servers as well
+2. Add support for pyenv and pipenv
+3. When / if completed, rename the project to better fit the larger functionality.
